@@ -1,28 +1,22 @@
 
 # Asegurate de instalar beatifulsoup y request
-#   pip install beautifulsoup4
-#   pip install requests
+pip install beautifulsoup4
+pip install requests
 
 import requests
 from bs4 import BeautifulSoup
 
 # Usar el modulo requests , usamos la funcion  "get"
-# provided to access the webpage provided as an
+# Acceder al sitio web
 # argumento de la funcion es "get:
 result = requests.get("https://www.google.com/")
 
-# To make sure that the website is accessible, we can
-# ensure that we obtain a 200 OK response to indicate
-# that the page is indeed present:
+# Para asegurarse de que puede ingresar al sitio, debe tener como respuesta
+# 200 OK response:
 
 print(result.status_code)
 
-# For other potential status codes you may encounter,
-# consult the following Wikipedia page:
-# https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-
-# We can also check the HTTP header of the website to
-# verify that we have indeed accessed the correct page:
+# Poder revisar el HTTP header del sitio:
 print(result.headers)
 
 # For more information on HTTP headers and the information
@@ -51,7 +45,7 @@ print("\n")
 # "About" on the page instead of every link. We can use the built-in
 # "text" function to access the text content between the <a> </a>
 # tags.
-#for link in links:
-#    if "About" in link.text:
-#        print(link)
-#        print(link.attrs['href']
+for link in links:
+  if "About" in link.text:
+       print(link)
+       print(link.attrs['href']
