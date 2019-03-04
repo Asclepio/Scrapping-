@@ -30,6 +30,19 @@ If all else fails, the license for Beautiful Soup allows you to package the enti
 
 I use Python 2.7 and Python 3.2 to develop Beautiful Soup, but it should work with other recent versions.
 
+## On the other hand :
+_________see the first 4 minutes : https://www.youtube.com/watch?v=XQgXKtPSzUI
+
+  In the *terminal* write:
+    pip install bs4
+
+     for installing the module.
+
+  In the *terminal* write:
+    pip install --upgrade pip 
+
+For upgradeing and avoid erros.
+
 ## Videos
 - How to call a python doc from terminal : 
 - First step : https://www.youtube.com/watch?v=zLlHs0jyddQ&list=PL5tcWHG-UPH2yY3Mxe_gIfzywZJl0GVyh
